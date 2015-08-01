@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+allprojects {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    apply plugin: "java"
+    repositories {
+        mavenCentral()
+    }
+}
+
+//execute the following task to install the gradle wrapper with the given version
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
