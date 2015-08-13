@@ -17,8 +17,3 @@ subprojects {
         mavenCentral()
     }
 }
-
-//execute the following task to install the gradle wrapper with the given version
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
-}
